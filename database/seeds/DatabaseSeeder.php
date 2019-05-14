@@ -12,6 +12,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-      //
+      // detta körs vid db:seed
+      factory(Article::class,10)->create();
     }
 }

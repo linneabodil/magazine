@@ -17,9 +17,10 @@ class Articles extends Migration
           $table->bigIncrements('id');
           $table->string('title');
           $table->text('text');
-          $table->float('category_id');
+          $table->string('category_id');
           $table->string('rank');
-          $table->timestamp('created_at')->nullable();
+          $table->boolean('extra');
+          $table->timestamps();
       });
     }
 
