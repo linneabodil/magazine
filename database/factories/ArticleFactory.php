@@ -14,3 +14,6 @@ $factory->define(Article::class, function (Faker $faker) {
         'extra' => $faker->boolean($chanceOfGettingTrue = 30)
     ];
 });
+
+
+// hej
