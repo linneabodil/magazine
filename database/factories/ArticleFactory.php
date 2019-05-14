@@ -15,5 +15,3 @@ $factory->define(Article::class, function (Faker $faker) {
     ];
 });
 
-
-// hej
