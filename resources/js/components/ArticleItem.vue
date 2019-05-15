@@ -1,9 +1,10 @@
 <template>
-    <div class="article">
-    <h2>{{ articles[4].title }}</h2>
-    <p>{{ articles[4].text }}</p>
-    <h3>{{ articles[4].rank }} {{ categories[articles[4].category_id].name }}</h3>
-
+    <div class="articles">
+      <div class="article" v-for="article in articles">
+        <h2>{{ article.title }}</h2>
+        <p>{{ article.text }}</p>
+        <h3>{{ article.rank }} {{ categories[article.category_id].name }}</h3>
+      </div>
     </div>
 </template>
 
@@ -24,9 +25,28 @@ export default {
         axios
         .get('./api/categories')
         .then(response => (
-            this.categories = response.data            
+            this.categories = response.data
         ))
     }
 }
 
 </script>
+<style lang="scss">
+
+.articles {
+  width: 70vw;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: .5rem;
+  margin: auto;
+
+  .article {
+    background: Lavender;
+    margin: 1rem;
+    padding: .5rem;
+    box-sizing: border-box;
+  }
+}
+
+</style>

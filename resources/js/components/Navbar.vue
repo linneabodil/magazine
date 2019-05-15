@@ -50,9 +50,10 @@ export default {
 <style lang="scss" scoped>
 
 .navbar {
-  background: Lavender;
+  background: White;
   width: 100vw;
   display: flex;
+  margin: 0;
 
   ul {
     margin: auto;

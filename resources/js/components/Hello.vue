@@ -1,6 +1,8 @@
 <template>
   <article class="main">
-    <a href="./"><h1>Scarlet Magazine</h1></a>
+    <a href="./">
+      <img src="http://localhost/project-magazine/public/image/title.svg" alt="logo">
+    </a>
   </article>
 </template>
 
@@ -16,11 +18,17 @@
 
 <style lang="scss">
 
-  h1 {
-    text-align: center;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 300;
-    font-size: 3rem;
+article {
+  background: Whitesmoke;
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+
+  img {
+    width: 100%;
   }
+}
 
 </style>

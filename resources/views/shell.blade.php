@@ -11,7 +11,7 @@
   <style>
 
     body {
-      background: WhiteSmoke;
+      background: White;
       margin: 0;
     }
 
@@ -19,9 +19,9 @@
   </head>
 
   <body>
-    
+
     <div id="app">
-    
+
       <hello>
       </hello>
 
