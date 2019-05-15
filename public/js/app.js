@@ -1782,11 +1782,10 @@ __webpack_require__.r(__webpack_exports__);
   mounted: function mounted() {
     var _this = this;
 
-    console.log("article");
     axios.get('./api/articles').then(function (response) {
-      return _this.articles = response.data, console.log(response.data);
+      return _this.articles = response.data;
     }), axios.get('./api/categories').then(function (response) {
-      return _this.categories = response.data, console.log(response.data);
+      return _this.categories = response.data;
     });
   }
 });
@@ -1810,18 +1809,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
-    return {
-      res: null
-    };
-  },
-  mounted: function mounted() {
-    console.log('Component mounted.');
-    /*  axios
-      .get('./api/horoscope')
-      .then(response => (
-        this.res = response.data[0],
-        console.log(response.data)
-      )) */
+    return {};
   }
 });
 
@@ -1848,6 +1836,26 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -1857,9 +1865,8 @@ __webpack_require__.r(__webpack_exports__);
   mounted: function mounted() {
     var _this = this;
 
-    console.log("Navbar.");
     axios.get('./api/categories').then(function (response) {
-      return _this.categories = response.data, console.log(response.data);
+      return _this.categories = response.data;
     });
   }
 });
@@ -37903,7 +37910,9 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("article", { staticClass: "main" }, [
-      _c("h1", [_vm._v("Scarlet Magazine")])
+      _c("a", { attrs: { href: "./" } }, [
+        _c("h1", [_vm._v("Scarlet Magazine")])
+      ])
     ])
   }
 ]
@@ -37929,18 +37938,37 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "navbar" }, [
-    _c(
-      "ul",
-      { staticClass: "nav" },
-      _vm._l(_vm.categories, function(category) {
-        return _c("li", { staticClass: "nav-item" }, [
-          _c("a", { staticClass: "nav-link", attrs: { href: "./api/ads" } }, [
-            _vm._v("\n        " + _vm._s(category.name) + "\n      ")
-          ])
+    _c("ul", { staticClass: "nav" }, [
+      _c("li", { staticClass: "nav-item" }, [
+        _c("a", { staticClass: "nav-link", attrs: { href: "./inredning" } }, [
+          _vm._v("\n        " + _vm._s(_vm.categories[0].name) + "\n      ")
         ])
-      }),
-      0
-    )
+      ]),
+      _vm._v(" "),
+      _c("li", { staticClass: "nav-item" }, [
+        _c("a", { staticClass: "nav-link", attrs: { href: "./mode" } }, [
+          _vm._v("\n        " + _vm._s(_vm.categories[1].name) + "\n      ")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("li", { staticClass: "nav-item" }, [
+        _c("a", { staticClass: "nav-link", attrs: { href: "./horoskop" } }, [
+          _vm._v("\n        " + _vm._s(_vm.categories[2].name) + "\n      ")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("li", { staticClass: "nav-item" }, [
+        _c("a", { staticClass: "nav-link", attrs: { href: "./traning" } }, [
+          _vm._v("\n        " + _vm._s(_vm.categories[3].name) + "\n      ")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("li", { staticClass: "nav-item" }, [
+        _c("a", { staticClass: "nav-link", attrs: { href: "./kost" } }, [
+          _vm._v("\n        " + _vm._s(_vm.categories[4].name) + "\n      ")
+        ])
+      ])
+    ])
   ])
 }
 var staticRenderFns = []

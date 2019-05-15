@@ -16,19 +16,15 @@ export default {
         }
     },
     mounted(){
-        console.log("article")
         axios
         .get('./api/articles')
         .then(response => (
-            this.articles = response.data,
-            console.log(response.data)
+            this.articles = response.data
         )),
         axios
         .get('./api/categories')
         .then(response => (
-            this.categories = response.data,
-            console.log(response.data)
-            
+            this.categories = response.data            
         ))
     }
 }

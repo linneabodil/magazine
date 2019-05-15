@@ -1,9 +1,29 @@
 <template>
   <div class="navbar">
     <ul class="nav">
-      <li class="nav-item" v-for="category in categories">
-        <a class="nav-link" href="./api/ads">
-          {{ category.name }}
+      <li class="nav-item">
+        <a class="nav-link" href="./inredning">
+          {{ categories[0].name }}
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./mode">
+          {{ categories[1].name }}
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./horoskop">
+          {{ categories[2].name }}
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./traning">
+          {{ categories[3].name }}
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./kost">
+          {{ categories[4].name }}
         </a>
       </li>
     </ul>
@@ -18,12 +38,10 @@ export default {
     }
   },
   mounted() {
-    console.log("Navbar.")
     axios
     .get('./api/categories')
     .then(response => (
-      this.categories = response.data,
-      console.log(response.data)
+      this.categories = response.data
     ))
   }
 }
