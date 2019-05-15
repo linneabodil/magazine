@@ -8,6 +8,6 @@ use Faker\Generator as Faker;
 $factory->define(Category::class, function (Faker $faker) {
     return [
         'name' => $faker->name,
-        'category_id' => $faker->numberBetween($min=1, $max=5)
+        'category_id' => $faker->numberBetween($min=0, $max=4)
     ];
 });
