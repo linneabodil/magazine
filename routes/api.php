@@ -15,6 +15,8 @@ use App\Article;
 */
 
 Route::get('/articles', 'ArticleController@index'); /// @ = funktion
+Route::get('/categories', 'CategoryController@index');
+Route::get('/ads', 'AdController@index');
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
