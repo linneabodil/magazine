@@ -1,5 +1,5 @@
 @extends('shell')
 
     @section('content')
-        <h6>Mode</h6>
+        <mode-view></mode-view>
     @endsection

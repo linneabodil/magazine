@@ -8,11 +8,27 @@
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-  <style>
+  <style lang="scss">
 
     body {
       background: White;
       margin: 0;
+    }
+
+    .articles {
+      width: 70vw;
+      box-sizing: border-box;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: .5rem;
+      margin: auto;
+    }
+
+    .article {
+      background: Lavender;
+      margin: 1rem;
+      padding: .5rem;
+      box-sizing: border-box;
     }
 
   </style>

@@ -17,7 +17,7 @@ export default {
         }
     },
     mounted(){
-        axios
+      /*  axios
         .get('./api/articles')
         .then(response => (
             this.articles = response.data
@@ -26,7 +26,7 @@ export default {
         .get('./api/categories')
         .then(response => (
             this.categories = response.data
-        ))
+        ))*/
     }
 }
 
