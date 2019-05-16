@@ -19,6 +19,7 @@ export default {
   },
   methods: {
     sortArticles() {
+      // sorted articles after categories
       var arr = this.articles;
       var sort = [];
       for (var i = 0; i < arr.length; i++) {
@@ -27,7 +28,11 @@ export default {
         }
       }
       this.sortedArticles = sort;
-      console.log(this.sortedArticles)
+      // sorting by rank
+      var test = sort.sort(function(a,b){
+        return b.rank - a.rank
+      });
+      this.sortedArticles = test;
     }
   },
   mounted(){

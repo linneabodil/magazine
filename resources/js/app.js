@@ -24,6 +24,12 @@ Vue.component('navbar', require('./components/Navbar.vue').default);
 Vue.component('article-item', require('./components/ArticleItem.vue').default);
 Vue.component('mode-view', require('./components/ModeView.vue').default);
 Vue.component('inredning-view', require('./components/InredningView.vue').default);
+Vue.component('horoskop-view', require('./components/HoroskopView.vue').default);
+Vue.component('traning-view', require('./components/TraningView.vue').default);
+Vue.component('kost-view', require('./components/KostView.vue').default);
+
+
+
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

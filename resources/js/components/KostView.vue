@@ -23,8 +23,8 @@ export default {
       var arr = this.articles;
       var sort = [];
       for (var i = 0; i < arr.length; i++) {
-        if (arr[i].category_id == "0") {
-          sort.push(arr[i]);
+        if (arr[i].category_id == "4") {
+        sort.push(arr[i]);
         }
       }
       this.sortedArticles = sort;

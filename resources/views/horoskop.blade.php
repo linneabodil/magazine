@@ -1,5 +1,5 @@
 @extends('shell')
 
     @section('content')
-        <h6>Horoskop</h6>
+        <horoskop-view></horoskop-view>
     @endsection
