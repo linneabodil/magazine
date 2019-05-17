@@ -11,26 +11,28 @@
 |
 */
 
+
 Route::get('/', function () {
     return view('welcome');
 });
-
 Route::get('/inredning', function () {
     return view('inredning');
 });
-
 Route::get('/mode', function () {
     return view('mode');
 });
-
 Route::get('/horoskop', function () {
     return view('horoskop');
 });
-
 Route::get('/traning', function () {
     return view('traning');
 });
-
 Route::get('/kost', function () {
     return view('kost');
 });
+Route::get('/login', function () {
+    return view('auth.login');
+});
+
+Route::get('/secret', 'ArticleController@secret');
+Auth::routes();

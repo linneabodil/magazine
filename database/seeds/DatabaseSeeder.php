@@ -4,6 +4,7 @@ use Illuminate\Database\Seeder;
 use App\Article;
 use App\Category;
 use App\Ad;
+use App\User;
 
 class DatabaseSeeder extends Seeder
 {
@@ -17,6 +18,7 @@ class DatabaseSeeder extends Seeder
       // detta körs vid db:seed
       factory(Article::class,10)->create();
       //factory(Category::class,5)->create();
-      factory(Ad::class,5)->create();
+      //factory(Ad::class,5)->create();
+      //factory(User::class,5)->create();
     }
 }

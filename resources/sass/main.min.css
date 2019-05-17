@@ -1,0 +1,1 @@
+body{background:White;margin:0}.articles{width:70vw;box-sizing:border-box;display:grid;grid-template-columns:repeat(3, 1fr);grid-gap:.5rem;margin:auto}.articles .article{background:Lavender;margin:1rem;padding:.5rem;box-sizing:border-box}.login{width:900px;margin:auto;padding:2rem}.login img{width:100%}

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Article;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Gate;
 
 class ArticleController extends Controller
 {
@@ -81,5 +82,12 @@ class ArticleController extends Controller
     public function destroy(Article $article)
     {
         //
+    }
+
+    public function secret() {
+      if(Gate::allows('admin-only', auth()->user())) {
+        return view('secret');
+      }
+      return "You are trash.";
     }
 }
