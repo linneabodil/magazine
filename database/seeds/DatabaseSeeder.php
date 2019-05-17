@@ -16,9 +16,9 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
       // detta körs vid db:seed
-      factory(Article::class,10)->create();
-      //factory(Category::class,5)->create();
-      //factory(Ad::class,5)->create();
-      //factory(User::class,5)->create();
+      // factory(Article::class,10)->create();
+      // factory(Category::class,5)->create();
+      // factory(Ad::class,5)->create();
+      // factory(User::class,5)->create();
     }
 }

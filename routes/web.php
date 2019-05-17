@@ -36,3 +36,15 @@ Route::get('/login', function () {
 
 Route::get('/secret', 'ArticleController@secret');
 Auth::routes();
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
