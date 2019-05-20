@@ -1,8 +1,7 @@
 @extends('shell')
 
     @section('content')
-      <!-- <article-item>
-      </article-item> -->
+      <start-view></start-view>
 
       <a href="./secret">LÄNK</a>
 

@@ -15,35 +15,21 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/inredning', function () {
-    return view('inredning');
-});
-Route::get('/mode', function () {
-    return view('mode');
-});
-Route::get('/horoskop', function () {
-    return view('horoskop');
-});
-Route::get('/traning', function () {
-    return view('traning');
-});
-Route::get('/kost', function () {
-    return view('kost');
-});
+Route::get('/inredning', 'ArticleController@inredning');
+
+Route::get('/mode', 'ArticleController@mode');
+
+Route::get('/horoskop', 'ArticleController@horoskop');
+
+Route::get('/traning', 'ArticleController@traning');
+
+Route::get('/kost', 'ArticleController@kost');
+
 Route::get('/login', function () {
     return view('auth.login');
 });
 
 Route::get('/secret', 'ArticleController@secret');
-Auth::routes();
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
 
 Auth::routes();
 

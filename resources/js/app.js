@@ -19,8 +19,10 @@ window.Vue = require('vue');
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
+
 Vue.component('hello', require('./components/Hello.vue').default);
 Vue.component('navbar', require('./components/Navbar.vue').default);
+Vue.component('start-view', require('./components/StartView.vue').default);
 Vue.component('article-item', require('./components/ArticleItem.vue').default);
 Vue.component('mode-view', require('./components/ModeView.vue').default);
 Vue.component('inredning-view', require('./components/InredningView.vue').default);

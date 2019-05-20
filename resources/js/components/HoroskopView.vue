@@ -1,11 +1,11 @@
 <template>
-  <div class="articles">
+  <!-- <div class="articles">
     <div class="article" v-for="article in sortedArticles">
       <h2>{{ article.title }}</h2>
       <p>{{ article.text }}</p>
       <h3>{{ article.rank }} {{ categories[article.category_id].name }}</h3>
     </div>
-  </div>
+  </div> -->
 </template>
 
 <script>
@@ -20,15 +20,16 @@ export default {
   methods: {
     sortArticles() {
       // sorted articles after categories
-      var arr = this.articles;
-      var sort = [];
-      for (var i = 0; i < arr.length; i++) {
-        if (arr[i].category_id == "2") {
-          sort.push(arr[i]);
-        }
-      }
-      this.sortedArticles = sort;
+      // var arr = this.articles;
+      // var sort = [];
+      // for (var i = 0; i < arr.length; i++) {
+      //   if (arr[i].category_id == "2") {
+      //     sort.push(arr[i]);
+      //   }
+      // }
+      // this.sortedArticles = sort;
       // sorting by rank
+      var sort = this.articles;
       var test = sort.sort(function(a,b){
         return b.rank - a.rank
       });
@@ -37,10 +38,10 @@ export default {
   },
   mounted(){
     axios
-    .get('./api/articles')
+    .get('./api/articles/horoskop')
     .then(response => (
       this.articles = response.data,
-      this.sortArticles()
+      console.log(response)
     )),
     axios
     .get('./api/categories')
