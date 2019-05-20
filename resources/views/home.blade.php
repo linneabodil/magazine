@@ -1,23 +1,20 @@
-@extends('layouts.app')
+@extends('shell')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">Dashboard</div>
+<div class="row container">
+  <div class="col-4">
+      @if (session('status'))
+          <div class="alert alert-success" role="alert">
+              {{ session('status') }}
+          </div>
+      @endif
 
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
 
-                    You are logged in!
-                </div>
-            </div>
-        </div>
-    </div>
+      <h2>Välkommen <?php echo Auth::user()->name ?>!</h2>
+      <p>Du är nu inloggad och har tillgång till allt extra material. <br><br>Xoxo, Scarlet-familjen</p>
+  </div>
+  <div class="col-8">
+    <img src="./image/welcome.jpg" alt="">
+  </div>
 </div>
 @endsection
