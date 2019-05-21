@@ -1,8 +1,10 @@
 @extends('shell')
 
     @section('content')
-      <start-view></start-view>
-
+      <div class="row start-container">
+        <start-view class="arts"></start-view>
+        <ad-item class="ad-area"></ad-item>
+      </div>
       <a href="./secret">LÄNK</a>
 
     @endsection

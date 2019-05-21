@@ -1,7 +1,7 @@
 @extends('shell')
 
 @section('content')
-<div class="row container">
+<div class="row container login">
   <form class="col-5" method="POST" action="{{ route('login') }}">
       @csrf
 

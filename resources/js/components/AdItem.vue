@@ -1,9 +1,8 @@
 <template>
-    <div>
+    <div class="ad">
         <h3>{{ ads[index].title }}</h3>
         <h3>{{ ads[index].rank }}</h3>
         <img v-bind:src="ads[index].img" alt="pic">
-
     </div>
 </template>
 
@@ -35,4 +34,13 @@ export default {
 </script>
 
 <style lang="scss">
+
+.ad {
+  max-width: 300px;
+
+  img {
+    width: 100%;
+  }
+}
+
 </style>

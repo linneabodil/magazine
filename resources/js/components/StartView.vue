@@ -16,6 +16,24 @@ export default {
             categories: []
         }
     },
+    methods: {
+      // sortArticles() {
+      //   // sorted articles after categories
+      //   var arr = this.articles;
+      //   var sort = [];
+      //   for (var i = 0; i < arr.length; i++) {
+      //     if (arr[i].category_id == "1") {
+      //       sort.push(arr[i]);
+      //     }
+      //   }
+      //   this.sortedArticles = sort;
+      //   // sorting by rank
+      //   var test = sort.sort(function(a,b){
+      //     return b.rank - a.rank
+      //   });
+      //   this.sortedArticles = test;
+      // }
+    },
     mounted(){
         axios
         .get('./api/articles')
@@ -30,7 +48,3 @@ export default {
     }
 }
 </script>
-
-<style>
-
-</style>

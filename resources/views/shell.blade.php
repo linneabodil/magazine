@@ -54,9 +54,6 @@
       <navbar>
       </navbar>
 
-      <ad-item>
-      </ad-item>
-
       @yield('content')
 
       </div>
