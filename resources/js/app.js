@@ -29,6 +29,7 @@ Vue.component('inredning-view', require('./components/InredningView.vue').defaul
 Vue.component('horoskop-view', require('./components/HoroskopView.vue').default);
 Vue.component('traning-view', require('./components/TraningView.vue').default);
 Vue.component('kost-view', require('./components/KostView.vue').default);
+Vue.component('ad-item', require('./components/AdItem.vue').default);
 
 
 
