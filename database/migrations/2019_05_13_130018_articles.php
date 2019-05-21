@@ -16,6 +16,7 @@ class Articles extends Migration
       Schema::create('articles', function (Blueprint $table) {
           $table->bigIncrements('id');
           $table->string('title');
+          $table->text('ingress');
           $table->text('text');
           $table->string('category_id');
           $table->string('rank');

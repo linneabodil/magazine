@@ -17,6 +17,7 @@ class CreateAdsTable extends Migration
             $table->bigIncrements('id');
             $table->string('title');
             $table->string('img');
+            $table->string('rank');
             $table->timestamps();
         });
     }
