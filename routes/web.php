@@ -15,14 +15,11 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
 Route::get('/inredning', 'ArticleController@inredning');
-
 Route::get('/mode', 'ArticleController@mode');
-
 Route::get('/horoskop', 'ArticleController@horoskop');
-
 Route::get('/traning', 'ArticleController@traning');
-
 Route::get('/kost', 'ArticleController@kost');
 
 Route::get('/login', function () {
@@ -34,3 +31,6 @@ Route::get('/secret', 'ArticleController@secret');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::resource('/articles','ArticleController');
+Route::resource('/articles/{id}', 'ArticleController@show');

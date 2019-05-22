@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Input;
 
 class ArticleController extends Controller
 {
@@ -102,7 +103,7 @@ class ArticleController extends Controller
      */
     public function create()
     {
-        //
+        return view('articles.create');
     }
 
     /**
@@ -113,7 +114,25 @@ class ArticleController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // Börja med en validering
+        $validator = Validator::make($request->all(), [
+            'title'    => 'required|unique:articles|max:100',
+            'ingress'    => 'required|unique:articles|max:100',
+            'text'    => 'required|unique:articles|max:100',
+        ]);
+        if ($validator->fails()) {
+            return redirect('articles/create')
+                ->withErrors($validator)
+                ->withInput();
+        }
+
+        Article::create($request->all());
+        // $articles = Article::all();
+        // return view('articles.index', [
+        //     'articles' => $articles
+        // ]);
+
+        return redirect('articles');
     }
 
     /**
@@ -122,9 +141,11 @@ class ArticleController extends Controller
      * @param  \App\Article  $article
      * @return \Illuminate\Http\Response
      */
-    public function show(Article $article)
+    public function show($id)
     {
-        //
+        $article = Article::findOrFail($id);
+        return view('admin.show', [ 
+            'article' => $article]);
     }
 
     /**
@@ -133,10 +154,14 @@ class ArticleController extends Controller
      * @param  \App\Article  $article
      * @return \Illuminate\Http\Response
      */
-    public function edit(Article $article)
+    public function edit($id)
     {
-        //
+        $article = Article::find($id);
+        return view('admin.edit', [
+            'article' => $article
+        ]);
     }
+
 
     /**
      * Update the specified resource in storage.
@@ -145,9 +170,16 @@ class ArticleController extends Controller
      * @param  \App\Article  $article
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Article $article)
+    public function update(Request $request, $id)
     {
-        //
+        $article = Article::find($id);
+        $article->title = Input::get('title');
+        $article->ingress = Input::get('ingress');
+        $article->text = Input::get('text');
+
+        $article->save();
+
+        return redirect('articles');
     }
 
     /**
@@ -156,9 +188,12 @@ class ArticleController extends Controller
      * @param  \App\Article  $article
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Article $article)
+    public function destroy($id)
     {
-        //
+        $article = Article::find($id);
+        $article->delete();
+
+        return redirect('articles');
     }
 
     public function secret() {
