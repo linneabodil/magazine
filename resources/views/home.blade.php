@@ -1,7 +1,7 @@
 @extends('shell')
 
 @section('content')
-<div class="row container">
+<div class="row container login">
   <div class="col-4">
       @if (session('status'))
           <div class="alert alert-success" role="alert">
