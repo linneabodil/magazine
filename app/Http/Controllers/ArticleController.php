@@ -21,7 +21,7 @@ class ArticleController extends Controller
         return Article::all();
     }
 
-    public function inredning() 
+    public function inredning()
     {
         if ($user = Auth::check()) {
             $inredning = Article::where('category_id', '0')->orderBy('rank', 'DESC')->get();
@@ -36,7 +36,7 @@ class ArticleController extends Controller
         }
     }
 
-    public function mode() 
+    public function mode()
     {
         if ($user = Auth::check()) {
             $mode = Article::where('category_id', '1')->orderBy('rank', 'DESC')->get();
@@ -48,10 +48,10 @@ class ArticleController extends Controller
             return view('mode', [
                 'items' => $mode
             ]);
-        } 
+        }
     }
 
-    public function horoskop() 
+    public function horoskop()
     {
         if ($user = Auth::check()) {
             $horoskop = Article::where('category_id', '2')->orderBy('rank', 'DESC')->get();
@@ -66,7 +66,7 @@ class ArticleController extends Controller
         }
     }
 
-    public function traning() 
+    public function traning()
     {
         if ($user = Auth::check()) {
             $traning = Article::where('category_id', '3')->orderBy('rank', 'DESC')->get();
@@ -81,7 +81,7 @@ class ArticleController extends Controller
         }
     }
 
-    public function kost() 
+    public function kost()
     {
         if ($user = Auth::check()) {
             $kost = Article::where('category_id', '4')->orderBy('rank', 'DESC')->get();
@@ -144,7 +144,7 @@ class ArticleController extends Controller
     public function show($id)
     {
         $article = Article::findOrFail($id);
-        return view('admin.show', [ 
+        return view('admin.show', [
             'article' => $article]);
     }
 
@@ -179,7 +179,7 @@ class ArticleController extends Controller
 
         $article->save();
 
-        return redirect('articles');
+        return redirect('/');
     }
 
     /**

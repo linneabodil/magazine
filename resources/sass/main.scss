@@ -76,3 +76,68 @@ body {
     flex: 5;
   }
 }
+
+// admin-page
+.admin {
+  background: WhiteSmoke;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Source Sans Pro";
+
+  p {
+    font-family: "Source Serif Pro";
+  }
+
+  .admin-show {
+    background: Lavender;
+    max-width: 50%;
+    padding: 2rem;
+    border-radius: .5rem;
+
+    h2 {
+      font-size: 2.8rem;
+      margin: .5rem 0;
+    }
+    h3 {
+      margin: 0;
+    }
+  }
+
+  .admin-edit {
+    background: Lavender;
+    max-width: 50%;
+    padding: 2rem;
+    border-radius: .5rem;
+    font-family: "Source Serif Pro";
+
+    label {
+      font-size: 1.3rem;
+      font-family: "Source Sans Pro";
+      margin-bottom: .2rem;
+    }
+    input {
+      width: 100%;
+      height: 20px;
+      margin-bottom: .6rem;
+      font-family: "Source Sans Pro";
+    }
+    textarea {
+      width: 100%;
+      height: 100px;
+      font-family: "Source Sans Pro";
+    }
+    .btn {
+      background: White;
+      border: none;
+      border-radius: .5rem;
+      padding: 1rem;
+      margin: .5rem 0;
+      height: 48px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+  }
+}

@@ -2,12 +2,11 @@
 
 @section('main')
 
-    <div>
-        <li>{{$article->title}}</li>
-        <div>
-            <p>{{$article->ingress}}</p>
-            <p>{{$article->text}}</p>
-        </div>
-    </div>
+  <div class="admin-show">
+    <h2>{{$article->title}}</h2>
+    <h3>{{$article->ingress}}</h3>
+    <p>{{$article->text}}</p>
+    <a class="btn" href="{{ url()->current() }}/edit">Redigera</a>
+  </div>
 
 @endsection
