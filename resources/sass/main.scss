@@ -3,6 +3,11 @@ body {
   margin: 0;
   padding: 0;
 }
+a {
+  color: Black;
+  text-decoration: none;
+}
+
 
 // all articles
 .articles {
@@ -88,7 +93,7 @@ body {
     flex: 1;
     margin-top: 2.5rem;
   }
-  
+
   h3 {
     font-size: 1.3rem;
   }
@@ -97,7 +102,6 @@ body {
 
 // admin-page
 .admin {
-  background: WhiteSmoke;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -110,7 +114,7 @@ body {
   }
 
   .admin-show {
-    background: Lavender;
+    background: rgba($color: #D8C3A5, $alpha: .15);
     max-width: 50%;
     padding: 2rem;
     border-radius: .5rem;
@@ -125,7 +129,7 @@ body {
   }
 
   .admin-edit {
-    background: Lavender;
+    background: rgba($color: #D8C3A5, $alpha: .15);
     max-width: 50%;
     padding: 2rem;
     border-radius: .5rem;

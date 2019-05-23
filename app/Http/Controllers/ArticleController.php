@@ -196,13 +196,20 @@ class ArticleController extends Controller
         return redirect('articles');
     }
 
-    public function secret() {
+    public function admin() {
       if(Gate::allows('admin-only', auth()->user())) {
           $articles = Article::all();
-        return view('secret', [
+        return view('admin', [
             'items' => $articles
         ]);
       }
-      return "You are trash.";
+      return "Endast för admins.";
+    }
+
+    public function articlesEdit() {
+      if(Gate::allows('admin-only', auth()->user())) {
+        return "Hello";
+      };
+      return "No.";
     }
 }

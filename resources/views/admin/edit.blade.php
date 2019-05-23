@@ -2,6 +2,7 @@
 
 @section('main')
 
+@can('admin-only')
 <div class="admin-edit">
 
   {!! Form::open(['route' => ['articles.update', $article->id], 'method' => 'post']) !!}
@@ -25,7 +26,7 @@
 
   {!! Form::submit('Spara', ['class' => 'btn btn-info']) !!}
   {!! Form::close() !!}
-
 </div>
+@endcan
 
 @endsection

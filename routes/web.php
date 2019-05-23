@@ -26,11 +26,12 @@ Route::get('/login', function () {
     return view('auth.login');
 });
 
-Route::get('/secret', 'ArticleController@secret');
+Route::get('/admin', 'ArticleController@admin');
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('/articles', 'ArticleController@articleEdit');
 Route::resource('/articles','ArticleController');
 Route::resource('/articles/{id}', 'ArticleController@show');
