@@ -6485,7 +6485,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".navbar[data-v-6dde423b] {\n  background: White;\n  width: 100vw;\n  display: flex;\n  margin: 0;\n}\n.navbar ul[data-v-6dde423b] {\n  margin: auto;\n}\n.navbar ul li[data-v-6dde423b] {\n  font-family: \"Source Sans Pro\";\n}\n.navbar ul li a[data-v-6dde423b] {\n  color: Black;\n}", ""]);
+exports.push([module.i, ".navbar[data-v-6dde423b] {\n  width: 100vw;\n  display: flex;\n  margin: 0 0 1rem 0;\n}\n.navbar ul[data-v-6dde423b] {\n  margin: auto;\n}\n.navbar ul li[data-v-6dde423b] {\n  font-family: \"Source Sans Pro\";\n}\n.navbar ul li a[data-v-6dde423b] {\n  color: Black;\n}", ""]);
 
 // exports
 
@@ -50820,8 +50820,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Applications/MAMP/htdocs/magazine/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /Applications/MAMP/htdocs/magazine/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\xampp\htdocs\project-magazine\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\project-magazine\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

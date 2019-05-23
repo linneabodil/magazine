@@ -7,7 +7,16 @@ a {
   color: Black;
   text-decoration: none;
 }
-
+.btn {
+  background: rgba($color: Burlywood, $alpha: .5);
+  color: White;
+  padding: .6rem;
+  border-radius: .5rem;
+  border: none;
+  &:hover {
+    background: rgba($color: Burlywood, $alpha: .7);
+  }
+}
 
 // all articles
 .articles {
@@ -19,7 +28,7 @@ a {
   margin: auto;
 
   .article {
-    background: rgba($color: #D8C3A5, $alpha: .15);
+    background: rgba($color: #f0ebf4, $alpha: .4);
     margin: 1rem;
     padding: 1rem;
     box-sizing: border-box;
@@ -38,8 +47,10 @@ a {
   }
 }
 
+// header
 article {
-  background: Whitesmoke;
+  background: linear-gradient(lavender, white);
+  // background: rgba($color: #, $alpha: .3);
   width: 100vw;
   box-sizing: border-box;
   padding: 2rem;
@@ -126,7 +137,7 @@ article {
   }
 
   .admin-show {
-    background: rgba($color: #D8C3A5, $alpha: .15);
+    background: rgba($color: #f0ebf4, $alpha: .4);
     max-width: 50%;
     padding: 2rem;
     border-radius: .5rem;
@@ -141,8 +152,8 @@ article {
   }
 
   .admin-edit {
-    background: rgba($color: #D8C3A5, $alpha: .15);
-    max-width: 50%;
+    background: rgba($color: #f0ebf4, $alpha: .4);
+    max-width: 500px;
     padding: 2rem;
     border-radius: .5rem;
     font-family: "Source Serif Pro";
@@ -153,25 +164,39 @@ article {
       margin-bottom: .2rem;
     }
     input {
-      width: 100%;
+      width: 97%;
       height: 20px;
       margin-bottom: .6rem;
       font-family: "Source Sans Pro";
+      border: none;
+      padding: .5rem;
+      border-radius: 5px;
     }
     textarea {
-      width: 100%;
+      width: 97%;
       height: 100px;
       font-family: "Source Sans Pro";
+      border: none;
+      padding: .5rem;
+      border-radius: 5px;
     }
     .btn {
-      background: White;
-      border: none;
-      border-radius: .5rem;
+      width: 100%;
       padding: 1rem;
       margin: .5rem 0;
       height: 48px;
       cursor: pointer;
       font-size: 1rem;
     }
+  }
+}
+
+.admin-header {
+  text-align: center;
+
+  h1 {
+    font-family: "Source Sans Pro";
+    font-size: 2rem;
+    margin: 2rem 0;
   }
 }

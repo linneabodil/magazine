@@ -14,4 +14,6 @@
   </div>
 @endsection
 
-<a href="./"><h1>Administration</h1></a>
+<div class="admin-header">
+  <a href="./"><h1>Administration</h1></a>
+</div>

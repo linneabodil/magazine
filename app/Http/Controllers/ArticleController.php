@@ -127,10 +127,6 @@ class ArticleController extends Controller
         }
 
         Article::create($request->all());
-        // $articles = Article::all();
-        // return view('articles.index', [
-        //     'articles' => $articles
-        // ]);
 
         return redirect('articles');
     }
