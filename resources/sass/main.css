@@ -4,6 +4,11 @@ body {
   padding: 0;
 }
 
+a {
+  color: Black;
+  text-decoration: none;
+}
+
 .articles {
   width: 70vw;
   -webkit-box-sizing: border-box;
@@ -34,6 +39,24 @@ body {
 
 .articles .article p {
   font-family: "Source Serif Pro";
+}
+
+article {
+  background: Whitesmoke;
+  width: 100vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+article img {
+  width: 100%;
 }
 
 .hello {
@@ -108,7 +131,6 @@ body {
 }
 
 .admin {
-  background: WhiteSmoke;
   width: 100vw;
   height: 100vh;
   display: -webkit-box;
@@ -128,7 +150,7 @@ body {
 }
 
 .admin .admin-show {
-  background: Lavender;
+  background: rgba(216, 195, 165, 0.15);
   max-width: 50%;
   padding: 2rem;
   border-radius: .5rem;
@@ -144,7 +166,7 @@ body {
 }
 
 .admin .admin-edit {
-  background: Lavender;
+  background: rgba(216, 195, 165, 0.15);
   max-width: 50%;
   padding: 2rem;
   border-radius: .5rem;

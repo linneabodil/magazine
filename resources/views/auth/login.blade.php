@@ -29,24 +29,24 @@
       <div class="form-group form-check">
         <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
         <label class="form-check-label" for="remember">
-            {{ __('Remember Me') }}
+            {{ __('Kom ihåg mig') }}
         </label>
       </div>
 
       <div class="form-group">
         <button type="submit" class="btn btn-primary">
-            {{ __('Login') }}
+            {{ __('Logga in') }}
         </button>
 
         @if (Route::has('password.request'))
             <a class="btn btn-link" href="{{ route('password.request') }}">
-                {{ __('Forgot Your Password?') }}
+                {{ __('Glömt lösenord?') }}
             </a>
         @endif
       </div>
   </form>
   <div class="col-7">
-      <img src="https://images.unsplash.com/photo-1537832816519-689ad163238b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1040&q=80" alt="">
+      <img src="../public/image/login.jpeg" alt="">
   </div>
 </div>
 

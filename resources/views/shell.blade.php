@@ -12,6 +12,11 @@
   </head>
 
   <body>
+    <article class="hello">
+      <a href="./">
+        <img src="../public/image/title.svg" alt="logo">
+      </a>
+    </article>
 
     <div id="app">
 

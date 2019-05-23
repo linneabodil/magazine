@@ -8,6 +8,4 @@
           <ad-item></ad-item>
         </div>
       </div>
-      <a href="./secret">LÄNK</a>
-
     @endsection

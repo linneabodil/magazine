@@ -38,6 +38,19 @@ a {
   }
 }
 
+article {
+  background: Whitesmoke;
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+
+  img {
+    width: 100%;
+  }
+}
+
 // register/login
 .hello {
   position: relative;
@@ -70,7 +83,6 @@ a {
   width: 900px;
   margin: auto;
   padding: 2rem;
-
   img {
     width: 100%;
   }
