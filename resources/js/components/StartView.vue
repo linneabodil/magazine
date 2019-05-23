@@ -2,8 +2,8 @@
   <div class="articles">
     <div class="article" v-for="article in articles">
       <h2>{{ article.title }}</h2>
+      <h3>{{ article.ingress }}</h3>
       <p>{{ article.text }}</p>
-      <h3>{{ article.rank }} {{ categories[article.category_id].name }}</h3>
     </div>
   </div>
 </template>

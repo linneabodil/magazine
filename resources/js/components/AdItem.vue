@@ -1,7 +1,6 @@
 <template>
     <div class="ad">
         <h3>{{ ads[index].title }}</h3>
-        <h3>{{ ads[index].rank }}</h3>
         <img v-bind:src="ads[index].img" alt="pic">
     </div>
 </template>
@@ -26,7 +25,6 @@ export default {
         .get('./api/ads')
         .then(response => (
             this.ads = response.data,
-            console.log(response.data),
             this.random()
         ))
     }

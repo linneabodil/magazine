@@ -1770,7 +1770,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -1789,7 +1788,7 @@ __webpack_require__.r(__webpack_exports__);
     var _this = this;
 
     axios.get('./api/ads').then(function (response) {
-      return _this.ads = response.data, console.log(response.data), _this.random();
+      return _this.ads = response.data, _this.random();
     });
   }
 });
@@ -38022,8 +38021,6 @@ var render = function() {
   return _c("div", { staticClass: "ad" }, [
     _c("h3", [_vm._v(_vm._s(_vm.ads[_vm.index].title))]),
     _vm._v(" "),
-    _c("h3", [_vm._v(_vm._s(_vm.ads[_vm.index].rank))]),
-    _vm._v(" "),
     _c("img", { attrs: { src: _vm.ads[_vm.index].img, alt: "pic" } })
   ])
 }
@@ -38190,15 +38187,9 @@ var render = function() {
       return _c("div", { staticClass: "article" }, [
         _c("h2", [_vm._v(_vm._s(article.title))]),
         _vm._v(" "),
-        _c("p", [_vm._v(_vm._s(article.text))]),
+        _c("h3", [_vm._v(_vm._s(article.ingress))]),
         _vm._v(" "),
-        _c("h3", [
-          _vm._v(
-            _vm._s(article.rank) +
-              " " +
-              _vm._s(_vm.categories[article.category_id].name)
-          )
-        ])
+        _c("p", [_vm._v(_vm._s(article.text))])
       ])
     }),
     0
@@ -50864,8 +50855,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\xampp\htdocs\project-magazine\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\project-magazine\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /Applications/MAMP/htdocs/magazine/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /Applications/MAMP/htdocs/magazine/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

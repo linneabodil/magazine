@@ -14,10 +14,22 @@ body {
   margin: auto;
 
   .article {
-    background: Lavender;
+    background: rgba($color: #D8C3A5, $alpha: .15);
     margin: 1rem;
-    padding: .5rem;
+    padding: 1rem;
     box-sizing: border-box;
+
+    h2 {
+      font-size: 1.9rem;
+    }
+
+    h3 {
+      font-size: 1.1rem;
+    }
+
+    p {
+      font-family: "Source Serif Pro";
+    }
   }
 }
 
@@ -73,8 +85,14 @@ body {
     margin-right: 3rem;
   }
   .ad-area {
-    flex: 5;
+    flex: 1;
+    margin-top: 2.5rem;
   }
+  
+  h3 {
+    font-size: 1.3rem;
+  }
+
 }
 
 // admin-page

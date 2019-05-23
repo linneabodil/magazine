@@ -3,7 +3,10 @@
     @section('content')
       <div class="row start-container">
         <start-view class="arts"></start-view>
-        <ad-item class="ad-area"></ad-item>
+        <div class="row ad-area">
+          <ad-item></ad-item>
+          <ad-item></ad-item>
+        </div>
       </div>
       <a href="./secret">LÄNK</a>
 
