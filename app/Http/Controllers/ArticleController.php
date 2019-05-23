@@ -198,7 +198,10 @@ class ArticleController extends Controller
 
     public function secret() {
       if(Gate::allows('admin-only', auth()->user())) {
-        return view('secret');
+          $articles = Article::all();
+        return view('secret', [
+            'items' => $articles
+        ]);
       }
       return "You are trash.";
     }

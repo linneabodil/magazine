@@ -24,6 +24,7 @@ Vue.component('navbar', require('./components/Navbar.vue').default);
 Vue.component('start-view', require('./components/StartView.vue').default);
 Vue.component('article-item', require('./components/ArticleItem.vue').default);
 Vue.component('ad-item', require('./components/AdItem.vue').default);
+Vue.component('admin-all', require('./components/AdminAll.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
