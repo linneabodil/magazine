@@ -136,6 +136,10 @@ article {
     font-family: "Source Serif Pro";
   }
 
+  .articles {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   .admin-show {
     background: rgba($color: #f0ebf4, $alpha: .4);
     max-width: 50%;
