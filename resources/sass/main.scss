@@ -46,12 +46,25 @@ a {
       font-family: "Source Serif Pro";
     }
   }
+
+  .category {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid Black;
+    box-sizing: border-box;
+    margin: 1rem;
+    padding: 1rem;
+    h2 {
+      font-size: 5rem;
+      font-family: "Abril Fatface";
+    }
+  }
 }
 
 // header
 article {
   background: linear-gradient(lavender, white);
-  // background: rgba($color: #, $alpha: .3);
   width: 100vw;
   box-sizing: border-box;
   padding: 2rem;
@@ -116,6 +129,7 @@ article {
   .ad-area {
     flex: 1;
     margin-top: 2.5rem;
+    margin-left: 3rem;
   }
 
   h3 {

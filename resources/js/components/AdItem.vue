@@ -39,6 +39,9 @@ export default {
   img {
     width: 100%;
   }
+  h3 {
+    font-size: 1.6rem;
+    color: Gray;
+  }
 }
-
 </style>

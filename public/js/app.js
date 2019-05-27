@@ -1983,24 +1983,10 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     sortArticles: function sortArticles() {
-      // sorted articles after categories
-      // var arr = this.articles;
-      // var sort = [];
-      // for (var i = 0; i < arr.length; i++) {
-      //   if (arr[i].category_id == "1") {
-      //     sort.push(arr[i]);
-      //   }
-      // }
-      // this.sortedArticles = sort;
-      // // sorting by rank
-      // var test = sort.sort(function(a,b){
-      //   return b.rank - a.rank
-      // });
-      // this.sortedArticles = test;
       var articles = this.articles;
       var sorted = [];
 
-      for (var i = 0; i < articles.length; i++) {
+      for (var i = 0; i < 75; i++) {
         if (articles[i].rank > "4") {
           sorted.push(articles[i]);
         }
@@ -6479,7 +6465,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".ad {\n  max-width: 300px;\n}\n.ad img {\n  width: 100%;\n}", ""]);
+exports.push([module.i, ".ad {\n  max-width: 300px;\n}\n.ad img {\n  width: 100%;\n}\n.ad h3 {\n  font-size: 1.6rem;\n  color: Gray;\n}", ""]);
 
 // exports
 
@@ -6498,7 +6484,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".navbar[data-v-6dde423b] {\n  width: 100vw;\n  display: flex;\n  margin: 0 0 1rem 0;\n}\n.navbar ul[data-v-6dde423b] {\n  margin: auto;\n}\n.navbar ul li[data-v-6dde423b] {\n  font-family: \"Source Sans Pro\";\n}\n.navbar ul li a[data-v-6dde423b] {\n  color: Black;\n}", ""]);
+exports.push([module.i, ".navbar[data-v-6dde423b] {\n  width: 100vw;\n  display: flex;\n  margin: 0 0 1rem 0;\n}\n.navbar ul[data-v-6dde423b] {\n  margin: auto;\n}\n.navbar ul li[data-v-6dde423b] {\n  font-family: \"Source Sans Pro\";\n}\n.navbar ul li a[data-v-6dde423b] {\n  color: Black;\n  transition: all ease 0.15s;\n}\n.navbar ul li a[data-v-6dde423b]:hover {\n  font-weight: bold;\n}", ""]);
 
 // exports
 

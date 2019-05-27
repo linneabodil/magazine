@@ -62,6 +62,10 @@ export default {
 
       a {
         color: Black;
+        transition: all ease .15s;
+        &:hover {
+          font-weight: bold;
+        }
       }
     }
   }
