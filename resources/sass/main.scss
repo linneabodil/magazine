@@ -37,13 +37,15 @@ a {
     h2 {
       font-size: 1.9rem;
     }
-
     h3 {
       font-size: 1.1rem;
     }
-
     p {
       font-family: "Source Serif Pro";
+    }
+    a:hover {
+      text-decoration: none;
+      color: Black;
     }
   }
 
